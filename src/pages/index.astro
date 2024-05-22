@@ -1,7 +1,22 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Novo Home Page";
+import Buttons from '../components/Buttons.astro'
+const pageTitle = "Home Page";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+<BaseLayout>
+  <h1>I’m Margarida, an Engineer with a strong passion for Design.</h1>
+  
+<Buttons />
+
+<div class="wrapper">
+  <div class="slider">
+    <div class="slide">
+      <img src="/Botanica_Thumbnail.png">
+      <img src="/Instagram_Thumbnail.png">
+    </div>
+    
+  </div>
+</div>
+
+
 </BaseLayout>

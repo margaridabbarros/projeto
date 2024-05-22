@@ -1,58 +1,91 @@
 html {
-    background-color: #f1f5f9;
-    font-family: sans-serif;
-  }
+  background-color: #f1f5f9;
+  font-family: Helvetica, sans-serif;
+}
   
-  body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
-    padding: 1rem;
-    line-height: 1.5;
-  }
+body {
+  margin: 0 auto;
+  width: 100%;
+  /*max-width: 80ch;*/
+  margin-top: 5rem;
+  padding: 1rem;
+  line-height: 1.5;
+  height: auto;
+}
   
-  * {
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-  }
+* {
+  box-sizing: border-box;
+}
 
+figure {
+  margin: 0;
+}
+  
+
+header {
+
+  width: 0
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%
+}
 
 
  /* nav styles */
 .hamburger {
-  padding-right: 20px;
+  background-color: #343434;
   cursor: pointer;
+  padding: 16px 16px;
+  border-radius: 16px; 
 }
 
+/*estilo do icon hamburguer*/
 .hamburger .line {
   display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
+  width: 16px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: #fff;
 }
 
+.hamburger .lastline {
+  margin-bottom: 0;
+}
+
+/*lista das páginas - fechada*/
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: white;
   display: none;
   margin: 0;
 }
 
+/*lista das páginas - aberta*/
 .nav-links a {
   display: block;
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .nav-links a:hover, a:focus {
@@ -62,6 +95,113 @@ html {
 .expanded {
   display: unset;
 }
+
+
+/*Conteúdo de cada página*/
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+/*Componente Botões*/
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.buttons a {
+  text-decoration: none;
+  border-radius: 24px;
+  height: 44px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.letstalk {
+  background-color: #343434;
+  color: white;
+}
+
+a.viewwork {
+  background-color: #f1f5f9;
+  color:#343434;
+  border: 1px solid #343434 
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width:1000px;
+  height: 200px;
+  position: relative;
+  background-color: white;
+}
+
+.slide {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 10s linear infinite;
+}
+
+.slide img {
+  height: 180px;
+  padding: 0 30px 0 30px;
+}
+
+/* tutorial: https://www.google.com/search?q=css+carrosel+images+animation&oq=css+carrosel+images+animation&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyCggFEAAYgAQYogQyCggGEAAYgAQYogQyCggHEAAYgAQYogQyCggIEAAYgAQYogTSAQkyNTEyN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f8319cec,vid:7UowTg1P9sI,st:0*/
+@keyframes slideshow {
+  0% {transform: translateX(0)}
+  100% {transform: translateX(-100%)}
+}
+
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #4c1d95;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 636px) {
   .nav-links {
