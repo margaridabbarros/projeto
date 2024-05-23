@@ -1,15 +1,99 @@
 ---
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Buttons from '../components/Buttons.astro'
 const pageTitle = "About Me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h1>{pageTitle}</h1>
-  <h2>... and my new Astro site!</h2>
 
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <p class="intro">This text should include something about myself and my personality.</p>
+ 
+  <img src="/Margarida_Barros.png" alt="" class="profile">
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <h2>I'm Margarida Barros</h2>
+  <p>This text should include something about me, but I don’t know what it should be become more interesting.This text should include something about me, but I don’t know what it should be become more interesting.</p>
 
-</BaseLayout>    
+  <Buttons />
+
+  <h1>My Work Experience</h1>
+
+  <button type="button" class="experience">
+    <p class="experience-number">01</p>
+    <div class="experience-details">
+      <p class="experience-role">Program Manager</p>
+      <div class="experience-company-date">
+        <p>OutSystems</p>
+        <p>Sep 21 - Jun 14</p>
+      </div>
+    </div>
+  </button>
+
+  <div class="experience-content">
+    <p>This text should include something about my work experience.</p>
+  </div>
+
+  <button type="button" class="experience">
+    <p class="experience-number">01</p>
+    <div class="experience-details">
+      <p class="experience-role">Program Manager</p>
+      <div class="experience-company-date">
+        <p>OutSystems</p>
+        <p>Sep 21 - Jun 14</p>
+      </div>
+    </div>
+  </button>
+
+  <div class="experience-content">
+    <p>This text should include something about my work experience.</p>
+  </div>
+
+  <button type="button" class="experience">
+    <p class="experience-number">01</p>
+    <div class="experience-details">
+      <p class="experience-role">Program Manager</p>
+      <div class="experience-company-date">
+        <p>OutSystems</p>
+        <p>Sep 21 - Jun 14</p>
+      </div>
+    </div>
+  </button>
+
+  <div class="experience-content">
+    <p>This text should include something about my work experience.</p>
+  </div>
+
+  <button type="button" class="experience">
+    <p class="experience-number">01</p>
+    <div class="experience-details">
+      <p class="experience-role">Program Manager</p>
+      <div class="experience-company-date">
+        <p>OutSystems</p>
+        <p>Sep 21 - Jun 14</p>
+      </div>
+    </div>
+  </button>
+
+  <div class="experience-content">
+    <p>This text should include something about my work experience.</p>
+  </div>
+
+</BaseLayout>
+
+<script>
+  var coll = document.getElementsByClassName("experience");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>

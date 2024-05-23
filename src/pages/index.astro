@@ -4,19 +4,30 @@ import Buttons from '../components/Buttons.astro'
 const pageTitle = "Home Page";
 ---
 <BaseLayout>
-  <h1>I’m Margarida, an Engineer with a strong passion for Design.</h1>
-  
-<Buttons />
-
-<div class="wrapper">
-  <div class="slider">
-    <div class="slide">
-      <img src="/Botanica_Thumbnail.png">
-      <img src="/Instagram_Thumbnail.png">
-    </div>
+  <section>
+    <h1>I’m Margarida, an Engineer with a strong passion for Design.</h1>
     
-  </div>
-</div>
+    <Buttons />
+
+    <section class="wrapper">
+      <div class="slider">
+  
+        <div class="slide">
+          <img src="/Botanica_Thumbnail.png" alt="">
+          <img src="/Instagram_Thumbnail.png" alt="">
+        </div>
+  
+        <div class="slide">
+          <img src="/Botanica_Thumbnail.png" alt="">
+          <img src="/Instagram_Thumbnail.png" alt="">
+        </div>
+        
+      </div>
+    </section>
+  </section>
+  
+
+  
 
 
 </BaseLayout>

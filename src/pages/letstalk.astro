@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Let's Talk";
+---
+<BaseLayout pageTitle={pageTitle}>
+    <h1>{pageTitle}</h1>
+
+    <div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          
+            <input type="hidden" name="access_key" value="b8b1d1fa-9266-4f43-bc6a-c1e7d9d40d83">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+      
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+      
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+      </div>
+  
+
+
+</BaseLayout>
