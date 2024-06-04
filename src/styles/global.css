@@ -8,7 +8,6 @@ body {
   width: 100%;
   /*max-width: 80ch;*/
   margin-top: 5rem;
-  padding: 1rem;
   line-height: 1.5;
   height: auto;
 }
@@ -45,7 +44,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  width: 100%
+  width: 100%;
+  height: 80px;
 }
 
 
@@ -54,7 +54,10 @@ nav {
   background-color: #343434;
   cursor: pointer;
   padding: 16px 16px;
-  border-radius: 16px; 
+  border-radius: 16px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
 }
 
 /*estilo do icon hamburguer*/
@@ -104,6 +107,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 1rem;
 }
 
 h1 {
@@ -129,8 +133,9 @@ h2 + p {
 }
 
 img.profile {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  border-radius: 8px;
 }
 
 /*Componente Botões*/
@@ -151,14 +156,19 @@ img.profile {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
 }
 
-a.letstalk {
+.letstalk figure {
+  height: 24px;
+}
+
+.letstalk {
   background-color: #343434;
   color: white;
 }
 
-a.viewwork {
+.viewwork {
   background-color: #f1f5f9;
   color:#343434;
   border: 1px solid #343434 
@@ -299,22 +309,52 @@ input[type=submit]:hover {
 
 
 
-
-
 /*Footer*/
 
 footer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   gap: 1rem;
-  margin-top: 2rem;
+  padding: 24px;
+  background-color: #E9E9E9;
 }
 
-footer a {
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #4c1d95;
-  text-decoration: none;
+section.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+  gap: 36px;
 }
+
+.contacts-circle {
+  background-color:#343434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+}
+
+.contacts figure {
+  width: 24px;
+  height: 24px;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+}
+
+
+footer h2, footer p {
+  font-size: 0.875rem;
+  color: #A2A2A2 ;
+}
+
+
 
 
 
@@ -340,6 +380,10 @@ footer a {
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .topnav {
     display: none;
   }
 }
