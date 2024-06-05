@@ -1,0 +1,25 @@
+---
+const allPosts = await Astro.glob('../pages/projects/*.md');
+---
+
+
+    {allPosts.map((project) =>
+        <div class="card">
+            <a href={project.url}>
+            
+                <div class="card-image">
+                    <img src={project.frontmatter.image.src}>
+                    <div class="card-caption">
+                        <h2>View Project</h2>
+                    </div>
+                </div>
+                
+                <p>{project.frontmatter.tags}</p>
+
+                <h1>{project.frontmatter.title}</h1>
+                <p>{project.frontmatter.description}</p>
+
+            </a>
+        </div>
+    )}
+

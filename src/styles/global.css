@@ -204,7 +204,6 @@ img.profile {
   padding: 0 30px 0 30px;
 }
 
-/* tutorial: https://www.google.com/search?q=css+carrosel+images+animation&oq=css+carrosel+images+animation&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyCggFEAAYgAQYogQyCggGEAAYgAQYogQyCggHEAAYgAQYogQyCggIEAAYgAQYogTSAQkyNTEyN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f8319cec,vid:7UowTg1P9sI,st:0*/
 @keyframes slideshow {
   0% {transform: translateX(0)}
   100% {transform: translateX(-100%)}
@@ -268,23 +267,64 @@ img.profile {
 }
 
 /*Portfolio*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
 
 .card {
   width: 80%;
-  height: 300px;
-  background-color: #343434;
+  height: auto;
+  background-color: #ccc;
   border-radius: 16px;
 }
 
-.card img {
-  height: 100px;
+.card-image {
+  position: relative;
+  /* transition: 0.5s; */
+  overflow: hidden;
 }
 
-.card h2 {
-  color: #fff;
+.card-image img {
+  width: 100%;
+  /*transition: 1s;*/
 }
 
+.card h1 {
+  color: #343434; 
+}
 
+.card a {
+  text-decoration: none;
+}
+
+.card-caption {
+  position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: black;
+  opacity: 80%;
+	transform: translateY(100%);
+	transition: 0.5s;
+}
+
+.card-image:hover .card-caption {
+	transform: translateY(0);
+}
+
+/* .card-image:hover img {
+	transform: translateY(100%);
+} */
 
 
 /*Let's Talk*/
