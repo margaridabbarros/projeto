@@ -7,6 +7,7 @@ body {
   margin: 0 auto;
   width: 100%;
   /*max-width: 80ch;*/
+  padding: 16px;
   margin-top: 5rem;
   line-height: 1.5;
   height: auto;
@@ -89,6 +90,7 @@ nav {
   padding: 10px 0;
   text-decoration: none;
   font-size: 1rem;
+  color: #343434
 }
 
 .nav-links a:hover, a:focus {
@@ -136,41 +138,7 @@ img.profile {
   border-radius: 8px;
 }
 
-/*Componente Botões*/
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.buttons a {
-  text-decoration: none;
-  border-radius: 24px;
-  height: 44px;
-  width: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
-.letstalk figure {
-  height: 24px;
-}
-
-.letstalk {
-  background-color: #343434;
-  color: white;
-}
-
-.viewwork {
-  background-color: #f1f5f9;
-  color:#343434;
-  border: 1px solid #343434 
-}
 
 
 /*Slider Imagens Homepage*/
@@ -275,58 +243,6 @@ img.profile {
 }
 
 
-.card {
-  width: 80%;
-  height: auto;
-  background-color: #ccc;
-  border-radius: 16px;
-}
-
-.card-image {
-  position: relative;
-  /* transition: 0.5s; */
-  overflow: hidden;
-}
-
-.card-image img {
-  width: 100%;
-  /*transition: 1s;*/
-}
-
-.card h1 {
-  color: #343434; 
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.card-caption {
-  position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	background-color: black;
-  opacity: 80%;
-	transform: translateY(100%);
-	transition: 0.5s;
-}
-
-.card-image:hover .card-caption {
-	transform: translateY(0);
-}
-
-/* .card-image:hover img {
-	transform: translateY(100%);
-} */
-
-
 /*Let's Talk*/
 input[type=text] {
   width: 100%;
@@ -363,29 +279,7 @@ input[type=submit]:hover {
   background-color: #A2A2A2;
 }
 
-
-
-
-/*Footer*/
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  padding: 24px;
-  background-color: #E9E9E9;
-}
-
-section.contacts {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 20px;
-  gap: 36px;
-}
-
+/* Footer */
 .contacts-circle {
   background-color:#343434;
   display: flex;
@@ -400,25 +294,6 @@ section.contacts {
   width: 24px;
   height: 24px;
 }
-
-footer h1 {
-  font-size: 1.5rem;
-}
-
-
-footer h2, footer p {
-  font-size: 0.875rem;
-  color: #A2A2A2 ;
-}
-
-
-
-
-
-
-
-
-
 
 
 

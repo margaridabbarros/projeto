@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import BackButton from '../components/BackButton.astro';
 const { frontmatter } = Astro.props;
 ---
 
@@ -10,6 +11,8 @@ const { frontmatter } = Astro.props;
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
     <slot /> -->
 
+    <BackButton />
+    
     <h1>{frontmatter.title}</h1>
     <h2>{frontmatter.subtitle}</h2>
     <p>{frontmatter.description}</p>

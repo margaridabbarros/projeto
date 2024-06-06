@@ -4,9 +4,43 @@
 <div class="buttons">
     <a href="/letstalk" class="letstalk">
         <p>Let's Talk</p>
-        <figure>
-            <img src="/svg/arrow-up-right.svg" alt="">
-        </figure>
+        <img src="/svg/arrow-up-right.svg" alt="">
     </a>
     <a href="/portfolio" class="viewwork">View Work</a>
 </div>
+
+<style>
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    }
+
+    .buttons a {
+    text-decoration: none;
+    border-radius: 24px;
+    height: 44px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    }
+
+    .letstalk figure {
+    height: 24px;
+    }
+
+    .letstalk {
+    background-color: #343434;
+    color: white;
+    }
+
+    .viewwork {
+    background-color: #f1f5f9;
+    color:#343434;
+    border: 1px solid #343434 
+    }
+</style>
