@@ -8,11 +8,11 @@ image:
     alt: "Thumbnail of Astro arcs."
 pubDate: 2022-07-08
 tags: ["UX/UI Design", "Product Design"]
-images:
-    - src: "/img/Intro.png"
-    - alt: "alt-text"
-    - src: "/img/Research.png"
-    - alt: "alt-text"
+# images:
+#     - src: "/img/Intro.png"
+#     - alt: "alt-text"
+#     - src: "/img/Research.png"
+#     - alt: "alt-text"
 ---
 
 
