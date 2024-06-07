@@ -8,19 +8,30 @@ const allPosts = await Astro.glob('../pages/projects/*.md');
         <a href={project.url}>
         
             <div class="card-image">
-                <img src={project.frontmatter.image.src}>
+                <img src={project.frontmatter.image.src} alt={project.frontmatter.image.alt}>
                 <div class="card-caption">
                     <h2>View Project</h2>
                 </div>
             </div>
             
-            <p>{project.frontmatter.tags}</p>
+            {/* <p>{project.frontmatter.tags}</p> */}
 
             <h1>{project.frontmatter.title}</h1>
             <p>{project.frontmatter.description}</p>
         </a>
+        <div class="tags">
+        {project.frontmatter.tags.map((tag) => (
+        <p class="tag">{tag}</p>
+      ))}
+    </div>
     </div>
 )}
+
+{/* <div class="tags">
+      {frontmatter.tags.map((tag) => (
+        <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+      ))}
+    </div> */}
 
 <style>
     .card {

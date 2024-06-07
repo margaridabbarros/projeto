@@ -17,4 +17,16 @@ const { frontmatter } = Astro.props;
     <h2>{frontmatter.subtitle}</h2>
     <p>{frontmatter.description}</p>
 
+    <div class="tags">
+      {frontmatter.tags.map((tag) => (
+        <p class="tag">{tag}</p>
+      ))}
+    </div>
+
+    <div class="images">
+        {frontmatter.images.map((images) => (
+           <img src={images.src} alt={images.alt}>
+        ))}
+      </div>
+
 </BaseLayout>

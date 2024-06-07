@@ -111,9 +111,39 @@ section {
   padding: 1rem;
 }
 
+section.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 1rem;
+}
+
+section.intro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem;
+}
+
+h1.intro {
+  margin: 3rem 0 0rem 0;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2.intro {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
 h1 {
   margin: 3rem 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 400;
 }
@@ -121,6 +151,7 @@ h1 {
 h2 {
   font-size: 0.875rem;
   text-align: center;
+  color:#A2A2A2
 }
 
 p {
@@ -315,7 +346,7 @@ input[type=submit]:hover {
     display: none;
   }
 
-  .topnav {
+  /* .topnav {
     display: none;
-  }
+  } */
 }

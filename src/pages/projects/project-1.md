@@ -11,4 +11,7 @@ image:
     src: "/img/Instagram_Thumbnail.png"
     alt: "Thumbnail of Astro arcs."
 tags: ["UX/UI Design", "Product Design"]
+
 ---
+
+

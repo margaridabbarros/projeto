@@ -16,19 +16,21 @@ const pageTitle = "Novo My Astro Learning Blog";
   <body>
     <Header />
 
-    <h1>Projects</h1>
-    <p>This is where I'll write about my journey and projects.</p>
+    <section>
+      <h1>Projects</h1>
+      <p>This is where I'll write about my journey and projects.</p>
+      
+      <!--
+      <ul>
+        {allPosts.map((project) => <li><a href={project.url}>{project.frontmatter.title}</a></li>)}
+      </ul>
+      -->
 
-    
-    <!--
-    <ul>
-      {allPosts.map((project) => <li><a href={project.url}>{project.frontmatter.title}</a></li>)}
-    </ul>
-    -->
-
-    <div class="cards">
-      <ProjectCard />
-    </div>
+      <div class="cards">
+        <ProjectCard />
+      </div>
+      
+    </section>
 
     <Footer />
   </body>
