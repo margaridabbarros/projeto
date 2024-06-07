@@ -25,8 +25,8 @@ const { frontmatter } = Astro.props;
     </div>
 
     <div class="images">
-        {frontmatter.images.map((image) => (
-            <img src={image.src} alt={image.alt}>
+        {frontmatter.images.map((figure) => (
+            <img src={figure.src} alt={figure.alt}>
         ))}
     </div>
 

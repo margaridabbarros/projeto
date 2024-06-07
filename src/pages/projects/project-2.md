@@ -9,9 +9,9 @@ image:
 pubDate: 2022-07-08
 tags: ["UX/UI Design", "Product Design"]
 images:
-  - src: "/img/Intro.png"
+  - src: /img/Intro.png
     alt: alt-text1
-  - src: "/img/Research.png"
+  - src: /img/Research.png
     alt: alt-text2
     
 ---
