@@ -37,7 +37,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
     .card {
         width: 100%;
         height: auto;
-        background-color: #ccc;
+        background-color: var(--secondary-light-color);
         border-radius: 16px;
     }
 
@@ -53,7 +53,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
     }
 
     .card h1 {
-        color: #343434; 
+        color: var(--main-color); 
     }
 
     .card a {
@@ -70,8 +70,8 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: white;
-        background-color: black;
+        color: var(--light-color);
+        background-color: var(--main-color);
         opacity: 80%;
         transform: translateY(100%);
         transition: 0.5s;

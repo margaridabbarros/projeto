@@ -2,6 +2,10 @@
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Buttons from '../components/Buttons.astro'
+import SliderImages from '../components/SliderImages.astro';
+import IntroProjects from '../components/IntroProjects.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import WorkExperience from '../components/WorkExperience.astro';
 const pageTitle = "Home Page";
 ---
 <BaseLayout>
@@ -11,31 +15,22 @@ const pageTitle = "Home Page";
       <h1 class="intro">Hi, I'm Margarida </h1>
       <h2 class="intro">An Engineer with a strong passion for Design</h2>
     </div>
-    <img src="/img/Margarida_Barros.png" alt="" class="profile">
+    <!-- <img src="/img/Margarida_Barros.png" alt="" class="profile"> -->
+    
+    <section class="wrapper">
+      <div class="slider">
+        <SliderImages />
+        <SliderImages />
+      </div>
+    </section>
+    
     <Buttons />
 
   </section>
 
-  <h1>Featured Work</h1>
-  
-  <section class="wrapper">
-    <div class="slider">
-
-      <div class="slide">
-        <img src="/img/Botanica_Thumbnail.png" alt="">
-        <img src="/img/Instagram_Thumbnail.png" alt="">
-      </div>
-
-      <div class="slide">
-        <img src="/img/Botanica_Thumbnail.png" alt="">
-        <img src="/img/Instagram_Thumbnail.png" alt="">
-      </div>
-      
-    </div>
-  </section>
-
-  <h1>Experience</h1>
-
+    <IntroProjects />
+    <ProjectCard />
+    <WorkExperience />
 
 
 </BaseLayout>

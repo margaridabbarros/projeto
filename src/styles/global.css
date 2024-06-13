@@ -1,5 +1,15 @@
+:root {
+  --main-color: rgba(52, 52, 52, 1);   
+  /* #343434 */
+  --light-color: rgba(255, 255, 255, 1);
+  --secondary-color:rgba(162, 162, 162, 1);
+  --secondary-light-color:rgba(162, 162, 162, 0.2);
+  --shadow-color: rgba(0,0,0,.2);
+}
+
+
 html {
-  background-color: #f1f5f9;
+  background-color: var(--light-color);
   font-family: Helvetica, sans-serif;
 }
   
@@ -27,37 +37,24 @@ header {
 }
 
 nav {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.topnav {
+  background-color: var(--light-color);
+  box-shadow: 0 2px 4px 0 var(--shadow-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
   width: 100%;
-  height: 80px;
+  z-index: 1;
 }
-
 
  /* nav styles */
 .hamburger {
-  background-color: #343434;
   cursor: pointer;
   padding: 16px 16px;
-  border-radius: 16px;
-  position: fixed;
-  top: 16px;
-  right: 16px;
 }
 
 /*estilo do icon hamburguer*/
@@ -66,7 +63,7 @@ nav {
   width: 16px;
   height: 2px;
   margin-bottom: 4px;
-  background-color: #fff;
+  background-color: var(--main-color);
 }
 
 .hamburger .lastline {
@@ -74,11 +71,12 @@ nav {
 }
 
 /*lista das páginas - fechada*/
+
 .nav-links {
   width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: white;
+  position: absolute;
+  top: 100%;
+  background-color: var(--light-color);
   display: none;
   margin: 0;
 }
@@ -90,12 +88,13 @@ nav {
   padding: 10px 0;
   text-decoration: none;
   font-size: 1rem;
-  color: #343434
+  color: var(--main-color);
 }
 
 .nav-links a:hover, a:focus {
-  background-color: #A2A2A2;
+  color: var(--secondary-color);
 }
+
 
 .expanded {
   display: unset;
@@ -137,7 +136,7 @@ h1.intro {
 h2.intro {
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -194,7 +193,6 @@ img.profile {
   align-items: center;
   gap: 16px;
   animation: slideshow 20s linear infinite;
-
 }
 
 .slide img {
@@ -206,63 +204,6 @@ img.profile {
 @keyframes slideshow {
   0% {transform: translateX(0)}
   100% {transform: translateX(-100%)}
-}
-
-
-/*Work Experience*/
-
-.experience-number {
-  font-size: 1.5rem;
-}
-
-.experience-details {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.experience-role {
-  font-size: 1rem;
-  text-align: left;
-  margin: 0;
-}
-
-.experience-company-date {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-}
-
-.experience-company-date p {
-  color:#A2A2A2;
-  font-size: 0.75rem;
-  margin: 0;
-}
-
-.experience {
-  background-color: #fff;
-  padding: 1rem;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #343434;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  cursor: pointer
-}
-
-.active {
-  border-bottom: none;
-}
-
-.experience-content {
-  background-color: #fff;
-  padding: 0 1rem;
-  display: none;
-  overflow: hidden;
-  border-bottom: 1px solid #343434;
 }
 
 /*Portfolio*/
@@ -342,11 +283,13 @@ input[type=submit]:hover {
     padding: 15px 20px;
   }
 
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hamburger {
     display: none;
   }
 
-  /* .topnav {
-    display: none;
-  } */
 }

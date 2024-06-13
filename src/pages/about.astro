@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Buttons from '../components/Buttons.astro'
+import WorkExperience from '../components/WorkExperience.astro';
 const pageTitle = "About Me";
 ---
 
@@ -17,83 +18,9 @@ const pageTitle = "About Me";
 
   <Buttons />
 
-  <h1>My Work Experience</h1>
+  <WorkExperience />
 
-  <button type="button" class="experience">
-    <p class="experience-number">01</p>
-    <div class="experience-details">
-      <p class="experience-role">Program Manager</p>
-      <div class="experience-company-date">
-        <p>OutSystems</p>
-        <p>Sep 21 - Jun 14</p>
-      </div>
-    </div>
-  </button>
 
-  <div class="experience-content">
-    <p>This text should include something about my work experience.</p>
-  </div>
-
-  <button type="button" class="experience">
-    <p class="experience-number">01</p>
-    <div class="experience-details">
-      <p class="experience-role">Program Manager</p>
-      <div class="experience-company-date">
-        <p>OutSystems</p>
-        <p>Sep 21 - Jun 14</p>
-      </div>
-    </div>
-  </button>
-
-  <div class="experience-content">
-    <p>This text should include something about my work experience.</p>
-  </div>
-
-  <button type="button" class="experience">
-    <p class="experience-number">01</p>
-    <div class="experience-details">
-      <p class="experience-role">Program Manager</p>
-      <div class="experience-company-date">
-        <p>OutSystems</p>
-        <p>Sep 21 - Jun 14</p>
-      </div>
-    </div>
-  </button>
-
-  <div class="experience-content">
-    <p>This text should include something about my work experience.</p>
-  </div>
-
-  <button type="button" class="experience">
-    <p class="experience-number">01</p>
-    <div class="experience-details">
-      <p class="experience-role">Program Manager</p>
-      <div class="experience-company-date">
-        <p>OutSystems</p>
-        <p>Sep 21 - Jun 14</p>
-      </div>
-    </div>
-  </button>
-
-  <div class="experience-content">
-    <p>This text should include something about my work experience.</p>
-  </div>
 
 </BaseLayout>
 
-<script>
-  var coll = document.getElementsByClassName("experience");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-  </script>
