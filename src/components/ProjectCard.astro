@@ -10,20 +10,27 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
             <div class="card-image">
                 <img src={project.frontmatter.image.src} alt={project.frontmatter.image.alt}>
                 <div class="card-caption">
-                    <h2>View Project</h2>
+                    <div class="card-caption-content">
+                        <h2>View Project</h2>
+                        <img src="/svg/arrow-up-right.svg" alt="Simple arrow up right">
+                    </div>
                 </div>
             </div>
             
-            {/* <p>{project.frontmatter.tags}</p> */}
+            <div class="card-tags">
+                {project.frontmatter.tags.map((tag) => (
+                <p class="tag">{tag}</p>
+                ))}
+            </div>
+            
 
-            <h1>{project.frontmatter.title}</h1>
-            <p>{project.frontmatter.description}</p>
+            <div class="card-text">
+                <h1>{project.frontmatter.title}</h1>
+                <p>{project.frontmatter.description}</p>
+            </div>
+
         </a>
-        <div class="tags">
-        {project.frontmatter.tags.map((tag) => (
-        <p class="tag">{tag}</p>
-      ))}
-    </div>
+
     </div>
 )}
 
@@ -36,12 +43,15 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 <style>
     .card {
         width: 100%;
+        max-width: 500px;
         height: auto;
         background-color: var(--secondary-light-color);
         border-radius: 16px;
+        overflow: hidden;
     }
 
     .card-image {
+        display: flex;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -50,10 +60,45 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
     .card-image img {
         width: 100%;
         height: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .card-tags {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        height: 100%;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    p.tag {
+        border: 1px solid var(--main-color);
+        border-radius: 24px;
+        color: var(--main-color);
+        height: 32px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
     }
 
     .card h1 {
-        color: var(--main-color); 
+        color: var(--main-color);
+        margin: 0;
+        text-align: left;
+        font-size: 1.5rem;
+
     }
 
     .card a {
@@ -70,15 +115,35 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: var(--light-color);
         background-color: var(--main-color);
         opacity: 80%;
         transform: translateY(100%);
         transition: 0.5s;
     }
 
+    .card-caption-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        height: 44px;
+        width: 140px;
+    }
+
+    .card-caption-content h2 {
+        color: var(--light-color);
+    }
+
+    .card-caption-content img {
+        height: 24px;
+        width: 24px;;
+    }
+
     .card-image:hover .card-caption {
         transform: translateY(0);
     }
+
+    
 </style>
 
