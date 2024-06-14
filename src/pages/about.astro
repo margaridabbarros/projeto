@@ -7,20 +7,26 @@ const pageTitle = "About Me";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>{pageTitle}</h1>
+  
+  <section class="page">
+    <section class="profile">
+      <h1 class="intro">{pageTitle}</h1>
+   
+      <figure class="profile">
+        <img src="/img/Margarida_Barros.png" alt="" class="profile">
+      </figure>
+    
+      <h2 class="profile">I'm Margarida Barros</h2>
+      <p class="profile">As a Mechanical Engineer who transitioned into the field of Design, I am passionate about creating user-centric designs that are both aesthetically pleasing and functional.  I am thrilled to be a part of the UX/UI field, where I can continue to learn and grow my skills. I am constantly seeking out new challenges and opportunities to push the boundaries.</p>
+    
+      <Buttons />
+    </section>
+  
+    <section class="work-experience">
+      <WorkExperience />
+    </section>
 
-  <p class="intro">This text should include something about myself and my personality.</p>
- 
-  <img src="/img/Margarida_Barros.png" alt="" class="profile">
-
-  <h2>I'm Margarida Barros</h2>
-  <p>This text should include something about me, but I don’t know what it should be become more interesting.This text should include something about me, but I don’t know what it should be become more interesting.</p>
-
-  <Buttons />
-
-  <WorkExperience />
-
-
-
+  </section>
+  
 </BaseLayout>
 

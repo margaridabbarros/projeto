@@ -1,14 +1,20 @@
 ---
-const { platform, username, image } = Astro.props;
+const { platform, username, name } = Astro.props;
 ---
 
-<div class="contacts-circle">
-    <figure>
-        <a href={`https://www.${platform}/${username}`}><img src={image} alt=""></a>
-    </figure>
+<div class="contacts-link">
+    <a href={`https://www.${platform}/${username}`}>{name}</a>
 </div>
 
 <style>
+    .contacts-link a {
+        color: var(--light-color);
+        font-size: 1rem;
+        text-decoration: var(--light-color);
+    }
 
+    .contacts-link a:hover, a:focus {
+        color: var(--secondary-color);
+    }
 
 </style>

@@ -4,17 +4,21 @@ import Contacts from './Contacts.astro';
 ---
 
 <footer>
-
-  <h1>Margarida Barros</h1>
-  <h2>Let’s Talk about opportunities and stuff. Let’s connect!</h2>
-  
-  <section class="contacts">
-    <Contacts contact="mailto:mbcsbarros@gmail.com" image="/svg/mail.svg"/>
-    <Contacts contact="tel:+351914560766" image="/svg/phone.svg"/>
-    <Social platform="behance.net" username="margaridabbarros" image="/svg/linkedin.svg" />
-    <Social platform="linkedin.com" username="in/margaridabarros" image="/svg/linkedin.svg"/>
+  <section class="footer-intro">
+    <h1>Margarida Barros</h1>
+    <h2>Product Designer</h2>
   </section>
-  
+
+  <section class="footer-contacts">
+    <p>Let’s Talk about opportunities and stuff. Let’s connect!</p>
+    <div class="footer-contacts-list">
+      <Contacts contact="mailto:mbcsbarros@gmail.com" name="E-mail" />
+      <Social platform="behance.net" username="margaridabbarros" name="Behance" />
+      <Social platform="linkedin.com" username="in/margaridabarros" name="LinkedIn" />
+    </div>
+    
+  </section>
+
   <p class="copyright">Copyright © 2024</p>
 
 </footer>
@@ -25,12 +29,29 @@ import Contacts from './Contacts.astro';
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 24px;
-    background-color: #E9E9E9;
+    background-color: var(--main-color);
   }
 
-  section.contacts {
+  .footer-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .footer-intro h2 {
+    margin: 0;
+    font-size: 3rem;
+  } 
+
+  .footer-intro h1 {
+    font-size: 1.5rem;
+    color: var(--light-color)
+  }
+
+  .footer-contacts-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,14 +59,14 @@ import Contacts from './Contacts.astro';
     gap: 36px;
   }
 
-
-  footer h1 {
-    font-size: 1.5rem;
+  .contact-link {
+    color: var(--light-color);
   }
 
-  footer h2, footer p {
+  .footer-intro h2, footer p {
     font-size: 0.875rem;
-    color: #A2A2A2 ;
+    font-weight: 400;
+    color: var(--secondary-color);
   }
 
 </style>

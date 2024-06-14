@@ -1,8 +1,8 @@
 :root {
-  --main-color: rgba(52, 52, 52, 1);   
+  --main-color: rgba(17, 17, 17, 1);   
   /* #343434 */
   --light-color: rgba(255, 255, 255, 1);
-  --secondary-color:rgba(162, 162, 162, 1);
+  --secondary-color: rgba(162, 162, 162, 1);
   --secondary-light-color:rgba(162, 162, 162, 0.1);
   --shadow-color: rgba(0,0,0,.2);
 }
@@ -10,6 +10,7 @@
 
 html {
   background-color: var(--light-color);
+  color: var(--main-color);
   font-family: Helvetica, sans-serif;
 }
   
@@ -101,13 +102,31 @@ nav {
 }
 
 
+h1 {
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2, p {
+  color: var(--secondary-color);
+}
+
+
 /*Conteúdo de cada página*/
 
-section {
+
+section.page {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding: 1rem;
+  gap: 40px;
+  padding-bottom: 40px;
 }
 
 section.intro {
@@ -115,7 +134,6 @@ section.intro {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 1rem;
 }
 
 section.intro div {
@@ -123,14 +141,13 @@ section.intro div {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 1rem;
 }
 
 h1.intro {
-  margin: 3rem 0 0rem 0;
   font-size: 3rem;
   text-align: center;
   font-weight: 400;
+  margin: 1rem 0 0 0;
 }
 
 h2.intro {
@@ -140,31 +157,33 @@ h2.intro {
   margin: 0;
 }
 
-h1 {
-  margin: 3rem 0 1rem 0;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 0.875rem;
-  text-align: center;
-}
-
-h2, p {
-  color: var(--secondary-color);
-}
-
 p.intro {
   text-align: center;
 }
 
+/* About Page */
+
+figure.profile {
+  display: flex;
+  justify-content: center;
+}
 
 img.profile {
-  max-width: 80%;
+  max-width: 500px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  margin: 3rem 0 0 0;
+}
+
+h2.profile {
+  color: var(--main-color);
+  font-weight: 400;
+  text-align: center;
+}
+
+p.profile {
+  margin: 0 0 2rem 0;
 }
 
 
@@ -185,7 +204,7 @@ img.profile {
   overflow: hidden;
 }
 
-.slide {
+figure.slide{
   height: 300px;
   display: flex;
   align-items: center;
@@ -250,7 +269,7 @@ input[type=submit]:hover {
 }
 
 /* Footer */
-.contacts-circle {
+/* .contacts-circle {
   background-color:#343434;
   display: flex;
   justify-content: center;
@@ -258,12 +277,12 @@ input[type=submit]:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%; 
-}
-
+} */
+/* 
 .contacts figure {
   width: 24px;
   height: 24px;
-}
+} */
 
 
 

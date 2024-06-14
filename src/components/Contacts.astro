@@ -1,9 +1,21 @@
 ---
-const { contact, image } = Astro.props;
+const { contact, name } = Astro.props;
 ---
 
-<div class="contacts-circle">
-    <figure>
-        <a href={contact}><img src={image} alt=""></a>
-    </figure>
+<div class="contacts-link">
+    <a href={contact}>{name}</a>
 </div>
+
+
+<style>
+    .contacts-link a {
+        color: var(--light-color);
+        font-size: 1rem;
+        text-decoration: var(--light-color);
+    }
+
+    .contacts-link a:hover, a:focus {
+        color: var(--secondary-color);
+    }
+
+</style>
