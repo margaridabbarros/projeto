@@ -229,6 +229,7 @@ figure.slide{
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding: 3rem 0
 }
 
 
@@ -251,6 +252,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   resize: none;
+  font-family: Helvetica, sans-serif;
 }
 
 input[type=submit] {
@@ -268,21 +270,25 @@ input[type=submit]:hover {
   background-color: #A2A2A2;
 }
 
-/* Footer */
-/* .contacts-circle {
-  background-color:#343434;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; 
-} */
-/* 
-.contacts figure {
-  width: 24px;
-  height: 24px;
-} */
+
+
+
+h2.letstalk, p.letstalk {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+p.letstalk, a.letstalk {
+  color: var(--main-color);
+}
+
+a.letstalk {
+  text-decoration: none;
+}
+
+
+
 
 
 

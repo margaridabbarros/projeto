@@ -1,9 +1,9 @@
 ---
-const {number, role, company, date, content} = Astro.props
+const {number, role, company, date} = Astro.props
 ---
 
 <button type="button" class="experience">
-    <div class="test">
+    <div class="experience-information">
         <p class="experience-number">{number}</p>
         <div class="experience-details">
           <p class="experience-role">{role}</p>
@@ -20,13 +20,13 @@ const {number, role, company, date, content} = Astro.props
 </button>
 
 <div class="experience-content">
-<p>{content}</p>
+    <slot />
 </div>
   
 <style>
 
     .experience-number {
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 200;
     }
     
@@ -37,13 +37,13 @@ const {number, role, company, date, content} = Astro.props
     }
     
     .experience-role {
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-align: left;
       font-weight: 200;
       margin: 0;
     }
     
-    .experience-number, .experience-role, .experience-content p {
+    .experience-number, .experience-role {
       color: var(--main-color);
     }
     
@@ -57,7 +57,7 @@ const {number, role, company, date, content} = Astro.props
     
     .experience-company-date p {
       color: var(--secondary-color);
-      font-size: 0.75rem;
+      font-size: 1rem;
       margin: 0;
     }
     
@@ -75,11 +75,11 @@ const {number, role, company, date, content} = Astro.props
       cursor: pointer
     }
     
-    .test {
+    .experience-information {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
     }
     
     .active {
@@ -100,11 +100,13 @@ const {number, role, company, date, content} = Astro.props
     
     .experience-content {
       background-color: #fff;
-      padding: 0 1rem;
+      padding: 0 1rem 1rem 1rem;
       display: none;
       overflow: hidden;
-      border-bottom: 1px solid #343434;
+      border-bottom: 1px solid var(--main-color);
     }
+
+  
     
     
     </style>

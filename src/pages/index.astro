@@ -5,6 +5,7 @@ import Buttons from '../components/Buttons.astro'
 import SliderImages from '../components/SliderImages.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import WorkExperience from '../components/WorkExperience.astro';
+import Education from '../components/Education.astro';
 const pageTitle = "Home Page";
 ---
 <BaseLayout>
@@ -33,15 +34,15 @@ const pageTitle = "Home Page";
       </div>
     </section>
   
-    <section class="work-experience">
+    <section class="experience">
       <WorkExperience />
+    </section>
+
+    <section class="experience">
+      <Education />
     </section>
 
   </section>
   
-
-
-
-
 
 </BaseLayout>

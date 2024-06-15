@@ -3,6 +3,7 @@ import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Buttons from '../components/Buttons.astro'
 import WorkExperience from '../components/WorkExperience.astro';
+import Education from '../components/Education.astro';
 const pageTitle = "About Me";
 ---
 
@@ -22,8 +23,12 @@ const pageTitle = "About Me";
       <Buttons />
     </section>
   
-    <section class="work-experience">
+    <section class="experience">
       <WorkExperience />
+    </section>
+
+    <section class="experience">
+      <Education />
     </section>
 
   </section>
