@@ -3,8 +3,8 @@
   /* #343434 */
   --light-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(162, 162, 162, 1);
-  --secondary-light-color:rgba(162, 162, 162, 0.1);
-  --shadow-color: rgba(0,0,0,.2);
+  --secondary-light-color:rgba(204, 204, 204, 1);
+  --shadow-color: rgba(100, 100, 111, 0.2);
 }
 
 
@@ -229,7 +229,89 @@ figure.slide{
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 3rem 0
+  padding: 16px 0;
+}
+
+h1.project {
+  font-size: 2.5rem;
+}
+
+h2.project {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.project h3, .project p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.project h3 {
+  color: var(--secondary-color);
+}
+
+.project p {
+  color: var(--main-color);
+}
+
+div.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: solid 1px var(--secondary-color);
+}
+
+div.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+p.tag {
+  background-color: var(  --secondary-light-color);
+  padding: 0 8px;
+  /* margin: 0 */
+}
+
+p.project-description {
+  font-size: 1rem;
+}
+
+a.behance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  height: 44px;
+}
+
+div.behance {
+  background-color: var(--light-color);
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  width: fit-content;
+  padding: 0 24px;
+
+}
+
+.behance p {
+  color: var(--main-color);
+  margin: 0; 
+}
+
+img.project {
+  width: 100%;
+}
+
+figure.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 

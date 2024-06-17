@@ -10,12 +10,9 @@ import Contacts from './Contacts.astro';
   </section>
 
   <section class="footer-contacts">
-    <p>Let’s Talk about opportunities and stuff. Let’s connect!</p>
-    <div class="footer-contacts-list">
       <Contacts contact="mailto:mbcsbarros@gmail.com" name="E-mail" />
       <Social platform="behance.net" username="margaridabbarros" name="Behance" />
       <Social platform="linkedin.com" username="in/margaridabarros" name="LinkedIn" />
-    </div>
     
   </section>
 
@@ -48,14 +45,15 @@ import Contacts from './Contacts.astro';
 
   .footer-intro h1 {
     font-size: 1.5rem;
-    color: var(--light-color)
+    color: var(--light-color);
+    margin: 2rem 0 0 0;
   }
 
-  .footer-contacts-list {
+  .footer-contacts {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     gap: 36px;
   }
 
@@ -66,7 +64,7 @@ import Contacts from './Contacts.astro';
   .footer-intro h2, footer p {
     font-size: 0.875rem;
     font-weight: 400;
-    color: var(--secondary-color);
+    color: var(--secondary-light-color);
   }
 
 </style>

@@ -23,9 +23,9 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
                 ))}
             </div>
             
-
             <div class="card-text">
                 <h1>{project.frontmatter.title}</h1>
+                <h2>{project.frontmatter.subtitle}</h2>
                 <p>{project.frontmatter.description}</p>
             </div>
 
@@ -45,9 +45,10 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         width: 100%;
         max-width: 500px;
         height: auto;
-        background-color: var(--secondary-light-color);
+        // background-color: var(--secondary-light-color);
         border-radius: 16px;
         overflow: hidden;
+        box-shadow: var(--shadow-color) 0 7px 29px 0;
     }
 
     .card-image {
@@ -69,13 +70,12 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         align-items: center;
         gap: 1rem;
         height: 100%;
-        padding: 1.5rem 1rem 1rem 1rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
 
     p.tag {
-        border: 1px solid var(--main-color);
-        border-radius: 24px;
         color: var(--main-color);
+        background-color: var(--secondary-light-color);
         height: 32px;
         width: auto;
         display: flex;
@@ -84,6 +84,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         align-items: center;
         padding: 1rem;
         margin: 0;
+        font-weight: 200;
     }
 
     .card-text {
@@ -93,11 +94,19 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         padding: 1rem 1.5rem;
     }
 
-    .card h1 {
+    .card-text h1 {
+        color: var(--main-color);
+        margin: 0;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .card-text h2 {
         color: var(--main-color);
         margin: 0;
         text-align: left;
         font-size: 1.5rem;
+        font-weight: 200;
 
     }
 
@@ -133,6 +142,8 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 
     .card-caption-content h2 {
         color: var(--light-color);
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .card-caption-content img {
