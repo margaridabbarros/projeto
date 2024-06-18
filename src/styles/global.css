@@ -163,12 +163,12 @@ p.intro {
 
 /* About Page */
 
-figure.profile {
+.profile figure {
   display: flex;
   justify-content: center;
 }
 
-img.profile {
+.profile img {
   max-width: 500px;
   width: 100%;
   height: auto;
@@ -176,16 +176,23 @@ img.profile {
   margin: 3rem 0 0 0;
 }
 
-h2.profile {
+.profile h2 {
   color: var(--main-color);
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  padding: 24px;
 }
 
-p.profile {
-  margin: 0 0 2rem 0;
+.profile-content p {
+  padding: 0 24px 24px 24px;
 }
 
+.work-education {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 
 
 /*Slider Imagens Homepage*/
@@ -208,14 +215,14 @@ figure.slide{
   height: 300px;
   display: flex;
   align-items: center;
-  gap: 16px;
-  animation: slideshow 20s linear infinite;
+  gap: 32px;
+  animation: slideshow 80s linear infinite;
 }
 
 .slide img {
+  border-radius: 16px;
   width: auto;
   height: 300px;
-  padding: 0 30px 0 30px;
 }
 
 @keyframes slideshow {
@@ -316,6 +323,58 @@ figure.project {
 
 
 /*Let's Talk*/
+
+section.letstalk {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+div.letstalk.info {
+  width: 400px;
+}
+
+div.letstalk {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+div.letstalk div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+div.letstalk h2, div.letstalk p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+div.letstalk p, div.letstalk a {
+  color: var(--main-color);
+}
+
+div.letstalk p {
+  margin: 0;
+}
+
+div.letstalk a {
+  text-decoration: none;
+}
+
+div.letstalk a:hover, div.letstalk a:focus {
+    color: var(--secondary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -338,7 +397,7 @@ textarea {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: fit-content;
   background-color: #343434;
   color: white;
   padding: 14px 20px;
@@ -355,26 +414,10 @@ input[type=submit]:hover {
 
 
 
-h2.letstalk, p.letstalk {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-}
-
-p.letstalk, a.letstalk {
-  color: var(--main-color);
-}
-
-a.letstalk {
-  text-decoration: none;
-}
 
 
 
-
-
-
-@media screen and (min-width: 636px) {
+@media screen and (min-width: 600px) {
   .nav-links {
     margin-left: 5em;
     display: block;
@@ -396,5 +439,61 @@ a.letstalk {
   .hamburger {
     display: none;
   }
+
+  section.letstalk {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  /* section.profile {
+    width: 100%;
+  } */
+  
+  section.profile > div {
+    /* max-width: 900px; */
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 32px 0 0 0;
+  }
+
+  .profile figure {
+    width: 100%;
+    max-width: 500px;
+    vertical-align: top;
+    padding: 24px;
+  }
+
+  .profile img {
+    height: fit-content;
+    margin: 0;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+
+  .profile h2 {
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .work-education {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  section.exp {
+    width: 50%;
+  }
+
 
 }

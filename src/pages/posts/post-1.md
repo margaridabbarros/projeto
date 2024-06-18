@@ -11,7 +11,7 @@ image:
     src: "/img/Instagram_Thumbnail.jpg"
     alt: "Thumbnail of Astro arcs."
 tags: ["UX/UI Design", "Product Design"]
-
+behance: "https://www.behance.net/gallery/197318489/Instagrams-New-Feature-Search-Control-Case-Study"
 ---
 
 <figure class="project">

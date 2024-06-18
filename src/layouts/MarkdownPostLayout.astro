@@ -15,8 +15,11 @@ const { frontmatter } = Astro.props;
   <BackButton />
     
   <section class="page">
-    <h1 class="project">{frontmatter.title}</h1>
-    <h2 class="project">{frontmatter.subtitle}</h2>
+    <section class="project-intro">
+      <h1 class="project">{frontmatter.title}</h1>
+      <h2 class="project">{frontmatter.subtitle}</h2>
+    </section>
+    
 
     <section class="project-details">
       <div class="project">

@@ -23,47 +23,12 @@ const {number, role, company, date} = Astro.props
     <slot />
 </div>
   
+
 <style>
 
-    .experience-number {
-      font-size: 3rem;
-      font-weight: 200;
-    }
-    
-    .experience-details {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    
-    .experience-role {
-      font-size: 1.2rem;
-      text-align: left;
-      font-weight: 200;
-      margin: 0;
-    }
-    
-    .experience-number, .experience-role {
-      color: var(--main-color);
-    }
-    
-    
-    .experience-company-date {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .experience-company-date p {
-      color: var(--secondary-color);
-      font-size: 1rem;
-      margin: 0;
-    }
-    
-    .experience {
+  .experience {
       background-color: var(--light-color);
-      padding: 1rem;
+      padding: 16px;
       width: 100%;
       border: none;
       border-bottom: 0.5px solid var(--main-color);
@@ -71,58 +36,111 @@ const {number, role, company, date} = Astro.props
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
+      gap: 16px;
       cursor: pointer
-    }
-    
-    .experience-information {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    .active {
-      border-bottom: none;
-    }
-    
-    img.minus {
-      display: none;
-    }
-    
-    .active img.minus {
-      display: block;
-    }
-    
-    .active img.plus {
-      display: none;
-    }
-    
-    .experience-content {
-      background-color: #fff;
-      padding: 0 1rem 1rem 1rem;
-      display: none;
-      overflow: hidden;
-      border-bottom: 1px solid var(--main-color);
-    }
+  }
 
-  
+  .experience-number {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .experience-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 16px;
+  }
+
+  .experience-details p {
+    text-align: left;
+  }
+
+  .experience-role {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .experience-number, .experience-role {
+    color: var(--main-color);
+  }
+
+  .experience-company-date {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .experience-company-date p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .experience-information {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+  }
+
+  .active {
+    border-bottom: none;
+  }
+
+  img.minus {
+    display: none;
+  }
+
+  .active img.minus {
+    display: block;
+  }
+
+  .active img.plus {
+    display: none;
+  }
+
+  .experience-content {
+    background-color: #fff;
+    padding: 0 16px 16px 16px;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--main-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    .experience-company-date {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .experience-company-date {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+</style>
+
+<script>
+    var coll = document.getElementsByClassName("experience");
+    var i;
     
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
     
-    </style>
-    
-    <script>
-      var coll = document.getElementsByClassName("experience");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>

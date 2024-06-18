@@ -6,39 +6,44 @@ const pageTitle = "Let's Talk";
 <BaseLayout pageTitle={pageTitle}>
     
     <section class="page">
-        <h1>{pageTitle}</h1>
+        <h1 class="intro">{pageTitle}</h1>
 
-        <section>
-            <h2 class="letstalk">Contact Info</h2>
-            <p class="letstalk">mbcsbarros@gmail.com</p>
-        </section>
-
-        <section>
-            <h2 class="letstalk">Social</h2>
-            <a href="https://www.behance.net/margaridabbarros" class="letstalk">Behance</a>
-            <a href="https://www.linkedin.com/in/margaridabarros/" class="letstalk">LinkedIn</a>
-        </section>
-
-
-        <section>
-            <form action="https://api.web3forms.com/submit" method="POST">
-            
-                <input type="hidden" name="access_key" value="b8b1d1fa-9266-4f43-bc6a-c1e7d9d40d83">
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name">
-        
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email">
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type your message"></textarea>
+        <section class="letstalk">
+            <div class="letstalk info">
+                <div>
+                    <h2>Contact Info</h2>
+                    <p>mbcsbarros@gmail.com</p>
+                </div>
                 
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
+                <div>
+                    <h2 >Social</h2>
+                    <a href="https://www.behance.net/margaridabbarros">Behance</a>
+                    <a href="https://www.linkedin.com/in/margaridabarros/">LinkedIn</a>
+                </div>
+            </div>
+        
+            <div class="letstalk form">
+                <div>
+                    <h2>I'm looking forward to hearing about your project and exploring ways we can collaborate. Don't hesitate to reach out – I'd love to connect with you!</h2>
+            
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+            
+                        <input type="hidden" name="access_key" value="b8b1d1fa-9266-4f43-bc6a-c1e7d9d40d83">
 
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email">
 
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message"></textarea>
+                        
+                        <input type="submit" value="Send Message">
+                    </form>
+
+                </div>
+            </div>
     </section>    
   
 

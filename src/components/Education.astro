@@ -2,25 +2,39 @@
 import ExperienceCard from "./ExperienceCard.astro";
 
 ---
+<section class="exp-section">
+    <h1>Education</h1>
 
-<h1>Education</h1>
-
-<ExperienceCard number="01" role="Digital Experience Design (DXD)" company="Postgraduate course, Faculty of Fine Arts - University of Lisbon" date="Sep 23 - Jun 24">
+    <ExperienceCard number="01" role="Digital Experience Design (DXD)" company="Postgraduate course, Faculty of Fine Arts - University of Lisbon" date="Sep 23 - Jun 24">
     
-    <p>This course prepared me to design digital experiences interacting with products and services. It taught me how to perform user-centered design and research, interaction design, user interface design, front‑end development, digital marketing, design strategy, design management, and entrepreneurship.</p>
+        <p>This course prepared me to design digital experiences interacting with products and services. It taught me how to perform user-centered design and research, interaction design, user interface design, front‑end development, digital marketing, design strategy, design management, and entrepreneurship.</p>
 
-</ExperienceCard>
+    </ExperienceCard>
 
 
-<ExperienceCard number="02" role="Mechanical Engineering" company="Bachelor & Master’s degree, Técnico Lisboa - University of Lisbon" date="Sep 13 - Nov 18">
+    <ExperienceCard number="02" role="Mechanical Engineering" company="Bachelor & Master’s degree, Técnico Lisboa - University of Lisbon" date="Sep 13 - Nov 18">
 
-    <p>My background in engineering has allowed me to leverage my analytical and complex problem-solving skills. I have gained an understanding of the interaction between people and systems, as well as the ability to think in terms of system design. Additionally, I acquired a prototyping and testing mindset.</p>
+        <p>My background in engineering has allowed me to leverage my analytical and complex problem-solving skills. I have gained an understanding of the interaction between people and systems, as well as the ability to think in terms of system design. Additionally, I acquired a prototyping and testing mindset.</p>
 
-</ExperienceCard>
+    </ExperienceCard>
+</section>
+
 
 <style>
+    .exp-section {
+        padding: 24px;
+        width: 100%;
+    }
+    
     p {
         font-size: 1rem;
         color: var(--main-color);
     }
+
+    @media (min-width: 992px) {
+        h1 {
+        text-align: left;
+        }
+    }
+    
 </style>
