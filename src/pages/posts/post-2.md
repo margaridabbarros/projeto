@@ -2,7 +2,6 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Botanica'
 subtitle: 'E-commerce website interface for indoor plants'
-author: Astro Learner
 description: "This project aimed to develop an e-commerce website for a physical product of choice, creating the desktop version, and the components and style of the design system from scratch."
 type: "Case Study"
 time: "10 Weeks"
@@ -10,8 +9,8 @@ team: "Individual"
 tool: "Figma"
 image:
     src: "/img/Botanica_Thumbnail.jpg"
-    alt: "Thumbnail of Astro arcs."
-tags: ["UI Design", "Product Design"]
+    alt: "One mockup example displayed on a laptop, which is also on a table. Store logo behind the laptop."
+tags: ["UI Design", "Product Design", "New Product"]
 behance: "https://www.behance.net/gallery/198352301/Botanica-Plant-Store-Case-Study"
 
 ---

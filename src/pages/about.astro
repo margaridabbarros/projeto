@@ -13,33 +13,32 @@ const pageTitle = "About Me";
     <section class="profile">
       <h1 class="intro">{pageTitle}</h1>
    
-      <div>
+      <section>
         <figure>
-          <img src="/img/Margarida_Barros.png" alt="">
+          <img src="/img/Margarida_Barros.png" alt="Black and white picture of a woman smiling, with natural background.">
         </figure>
       
-        <div class="profile-content">
+        <article class="profile-content">
           <h2>I'm Margarida Barros</h2>
-          <p>As a Mechanical Engineer who transitioned into the field of Design, I am passionate about creating user-centric designs that are both aesthetically pleasing and functional.</p>
-          <p>I am thrilled to be a part of the UX/UI field, where I can continue to learn and grow my skills. I am constantly seeking out new challenges and opportunities to push the boundaries.</p>
-        </div>
-      </div>
-      
-      <Buttons />
+          <p class="profile-content">As a Mechanical Engineer who transitioned into the field of Design, I am passionate about creating user-centric designs that are both aesthetically pleasing and functional.</p>
+          <p class="profile-content">I am thrilled to be a part of the UX/UI field, where I can continue to learn and grow my skills. I am constantly seeking out new challenges and opportunities to push the boundaries.</p>
+
+          <Buttons />
+        </article>
+      </section>
 
     </section>
   
     <section class="work-education">
-      <section>
+      <section class="work">
         <WorkExperience />
       </section>
   
-      <section>
+      <section class="education">
         <Education />
       </section>
     </section>
     
-
   </section>
   
 </BaseLayout>

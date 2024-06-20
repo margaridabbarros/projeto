@@ -2,26 +2,29 @@
 const {number, role, company, date} = Astro.props
 ---
 
-<button type="button" class="experience">
-  <article class="experience-information">
-    <p class="experience-number">{number}</p>
-    <article class="experience-details">
-      <p class="experience-role">{role}</p>
-      <article class="experience-company-date">
-        <p>{company}</p>
-        <p>{date}</p>
+<section class="experience-card">
+  <button type="button" class="experience">
+    <article class="experience-information">
+      <p class="experience-number">{number}</p>
+      <article class="experience-details">
+        <p class="experience-role">{role}</p>
+        <article class="experience-company-date">
+          <p>{company}</p>
+          <p>{date}</p>
+        </article>
       </article>
     </article>
+      
+    <img src="/svg/plus.svg" class="plus" alt="Plus icon to expand information">
+    <img src="/svg/minus.svg" class="minus" alt="Minus icon to collapse information">
+  
+  </button>
+  
+  <article class="experience-content">
+      <slot />
   </article>
-    
-  <img src="/svg/plus.svg" class="plus" alt="Plus icon to expand information">
-  <img src="/svg/minus.svg" class="minus" alt="Minus icon to collapse information">
+</section>
 
-</button>
-
-<article class="experience-content">
-    <slot />
-</article>
   
 
 <style>
@@ -58,7 +61,6 @@ const {number, role, company, date} = Astro.props
   .experience-role {
     font-size: 1.2rem;
     text-align: left;
-    /* font-weight: 200; */
     margin: 0;
   }
 
@@ -113,6 +115,7 @@ const {number, role, company, date} = Astro.props
   @media screen and (min-width: 600px) {
     .experience-number {
       font-size: 3rem;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -120,6 +123,11 @@ const {number, role, company, date} = Astro.props
     display: flex;
     flex-direction: row;
     gap: 24px;
+    }
+
+    .experience-card{
+      max-width: 100%;
+    }
   }
 
   @media screen and (min-width: 992px) {
@@ -128,6 +136,7 @@ const {number, role, company, date} = Astro.props
     flex-direction: column;
     align-items: start;
     gap: 16px;
+    }
   }
 
 </style>

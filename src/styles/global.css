@@ -2,7 +2,7 @@
   --main-color: rgba(17, 17, 17, 1);
   --light-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(162, 162, 162, 1);
-  --secondary-light-color:rgba(246, 246, 246, 1);
+  --secondary-light-color:rgba(217, 217, 217, 1);
   --shadow-color: rgba(100, 100, 111, 0.2);
 }
 
@@ -31,7 +31,6 @@ figure {
   margin: 0;
 }
   
-
 header {
   width: 0
 }
@@ -79,18 +78,23 @@ nav {
   background-color: var(--light-color);
   display: none;
   margin: 0;
+  list-style-type: none;
   box-shadow: 0 2px 4px 0 var(--shadow-color);
 }
 
 /*Lista das páginas - aberta*/
-.nav-links a {
+.nav-links li {
   display: block;
   text-align: center;
   padding: 16px 0;
+}
+
+.nav-links a {
   text-decoration: none;
   font-size: 1rem;
   color: var(--main-color);
 }
+
 
 .nav-links a:hover, a:focus {
   color: var(--secondary-color);
@@ -200,8 +204,15 @@ p.intro {
   padding: 24px;
 }
 
-.profile-content p {
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.profile-content {
   padding: 0 24px 24px 24px;
+  margin: 0;
 }
 
 .work-education {
@@ -356,42 +367,39 @@ section.letstalk {
   gap: 32px;
 }
 
-div.letstalk.info {
-  width: 400px;
-}
 
-div.letstalk {
+article.letstalk {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-div.letstalk div {
+article.letstalk div {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-div.letstalk h2, div.letstalk p {
+article.letstalk h2, article.letstalk p {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
 }
 
-div.letstalk p, div.letstalk a {
+article.letstalk p, article.letstalk a {
   color: var(--main-color);
 }
 
-div.letstalk p {
+article.letstalk p {
   margin: 0;
 }
 
-div.letstalk a {
+article.letstalk a {
   text-decoration: none;
 }
 
-div.letstalk a:hover, div.letstalk a:focus {
+article.letstalk a:hover, article.letstalk a:focus {
     color: var(--secondary-color);
 }
 
@@ -439,7 +447,6 @@ input[type=submit]:hover {
 
 
 
-
 @media screen and (min-width: 600px) {
   .nav-links {
     margin-left: 5em;
@@ -447,9 +454,10 @@ input[type=submit]:hover {
     position: static;
     width: auto;
     background: none;
+    box-shadow: none;
   }
 
-  .nav-links a {
+  .nav-links li {
     display: inline-block;
     padding: 16px 16px;
   }
@@ -473,7 +481,7 @@ input[type=submit]:hover {
 
 @media (min-width: 768px) {
   
-  section.profile > div {
+  section.profile > section {
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -488,16 +496,21 @@ input[type=submit]:hover {
   }
 
   .profile img {
-    height: fit-content;
+    object-fit: cover;
     margin: 0;
   }
 
   .profile-content {
     width: 100%;
+    align-items: start;
   }
 
   .profile h2 {
     text-align: left;
+  }
+
+  .cards {
+    gap: 40px;
   }
 
   .project-details {
@@ -514,6 +527,18 @@ input[type=submit]:hover {
     width: 50%;
   }
 
+  section.letstalk {
+    padding: 0 80px;
+  }
+
+  article.info {
+    width: 30%;
+  }
+
+  article.form {
+    width: 70%;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -523,7 +548,7 @@ input[type=submit]:hover {
     gap: 32px;
   }
 
-  section.exp {
+  .work, .education {
     width: 50%;
   }
 

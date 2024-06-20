@@ -16,7 +16,7 @@
         align-items: center;
         justify-content: center;
         gap: 16px;
-        padding: 24px;
+        padding: 24px 16px;
     }
 
     .buttons img {
@@ -59,6 +59,29 @@
 
     .letstalk p, a.viewwork {
         font-size: 1rem;
+    }
+
+    @media (min-width: 600px) {
+        .letstalk:hover {
+        background-color: var(--secondary-color);
+        }
+
+        .viewwork:hover {
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color); 
+        }
+    }
+
+    @media (min-width: 768px) {
+    
+        .buttons {
+            gap: 32px;
+        }
+
+        .buttons a {
+            height: 56px;
+            width: 200px;
+        }
     }
 
 </style>

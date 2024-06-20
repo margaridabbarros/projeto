@@ -4,17 +4,19 @@ import Contacts from './Contacts.astro';
 ---
 
 <footer>
-  <section class="footer-intro">
-    <h1>Margarida Barros</h1>
-    <h2>Product Designer</h2>
+  <section class="footer-info">
+    <article class="footer-intro">
+      <h1>Margarida Barros</h1>
+      <h2>Product Designer</h2>
+    </article>
+  
+    <article class="footer-contacts">
+      <Contacts contact="mailto:mbcsbarros@gmail.com" name="E-mail" />
+      <Social platform="behance.net" username="margaridabbarros" name="Behance" />
+      <Social platform="linkedin.com" username="in/margaridabarros" name="LinkedIn" />
+    </article>
   </section>
-
-  <section class="footer-contacts">
-    <Contacts contact="mailto:mbcsbarros@gmail.com" name="E-mail" />
-    <Social platform="behance.net" username="margaridabbarros" name="Behance" />
-    <Social platform="linkedin.com" username="in/margaridabarros" name="LinkedIn" />
-  </section>
-
+  
   <p class="copyright">Copyright © 2024</p>
 
 </footer>
@@ -24,10 +26,17 @@ import Contacts from './Contacts.astro';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 32px;
     padding: 24px;
     background-color: var(--main-color);
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0 0 0;
   }
 
   .footer-intro {
@@ -38,22 +47,21 @@ import Contacts from './Contacts.astro';
   }
 
   .footer-intro h2 {
-    margin: 0;
     font-size: 3rem;
+    margin: 0;
   } 
 
   .footer-intro h1 {
     font-size: 1.5rem;
     color: var(--light-color);
-    margin: 32px 0 0 0;
+    margin: 0;
   }
 
   .footer-contacts {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding-bottom: 20px; */
-    gap: 36px;
+    gap: 24px;
   }
 
   .contact-link {
@@ -65,5 +73,24 @@ import Contacts from './Contacts.astro';
     font-weight: 400;
     color: var(--secondary-light-color);
   }
+
+  @media (min-width: 768px) {
+    .footer-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .footer-intro h1, .footer-intro h2 {
+      text-align: left;
+    }
+    
+    .copyright {
+      width: 100%;
+      text-align: right;
+    }
+  }
+  
 
 </style>

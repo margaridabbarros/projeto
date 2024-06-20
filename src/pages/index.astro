@@ -35,34 +35,15 @@ const pageTitle = "Home Page";
     </section>
   
     <section class="work-education">
-      <section>
+      <section class="work">
         <WorkExperience />
       </section>
   
-      <section>
+      <section class="education">
         <Education />
       </section>
     </section>
 
   </section>
-  
 
 </BaseLayout>
-
-<!-- <style>
-  const observer = new IntersectionObserver(entries => {
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add('intro-animation');
-    }
-  });
-});
-
-const viewbox = document.querySelectorAll('.intro');
-viewbox.forEach(intro => {
-  observer.observe(intro);
-});
-</style> -->

@@ -9,8 +9,8 @@ team: "4 Team Members"
 tool: "Figma"
 image:
     src: "/img/Instagram_Thumbnail.jpg"
-    alt: "Thumbnail of Astro arcs."
-tags: ["UX/UI Design", "Product Design"]
+    alt: "Two mockup examples displayed on two iphones, floating, and in perspective.Purple gradient background."
+tags: ["UX/UI Design", "Product Design", "New Feature"]
 behance: "https://www.behance.net/gallery/197318489/Instagrams-New-Feature-Search-Control-Case-Study"
 ---
 
