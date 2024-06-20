@@ -2,16 +2,16 @@
 const { contact, name } = Astro.props;
 ---
 
-<div class="contacts-link">
+<article class="contacts-link">
     <a href={contact}>{name}</a>
-</div>
+</article>
 
 
 <style>
     .contacts-link a {
         color: var(--light-color);
         font-size: 1rem;
-        text-decoration: var(--light-color);
+        text-decoration: none;
     }
 
     .contacts-link a:hover, a:focus {

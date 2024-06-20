@@ -86,7 +86,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         align-items: center;
         padding: 1rem;
         margin: 0;
-        font-weight: 200;
+        // font-weight: 200;
     }
 
     .card-text {
@@ -100,15 +100,15 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         color: var(--main-color);
         margin: 0;
         text-align: left;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .card-text h2 {
         color: var(--main-color);
         margin: 0;
         text-align: left;
-        font-size: 1.5rem;
-        font-weight: 200;
+        font-size: 1rem;
+        // font-weight: 200;
 
     }
 
@@ -157,6 +157,17 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
         transform: translateY(0);
     }
 
+    @media screen and (min-width: 600px) {
+        .card-text h1 {
+            font-size: 2rem;
+        }
+
+        .card-text h2 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    
     @media (min-width: 768px) {
 
         .card {

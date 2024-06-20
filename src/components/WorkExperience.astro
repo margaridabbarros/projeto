@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard.astro";
 
 ---
 
-<section class="exp-section">
+<section class="section-experience">
   <h1>Work Experience</h1>
 
   <ExperienceCard number="01" role="Program Manager" company="OutSystems" date="Sep 21 - Jun 24">
@@ -33,8 +33,7 @@ import ExperienceCard from "./ExperienceCard.astro";
 </section>
 
 <style>
-  .exp-section {
-      padding: 24px;
+  .section-experience {
       width: 100%;
   }
     
@@ -43,10 +42,17 @@ import ExperienceCard from "./ExperienceCard.astro";
       color: var(--main-color);
   }
 
+
+
   @media (min-width: 992px) {
     h1 {
       text-align: left;
     }
+
+    .section-experience {
+      padding: 24px;
+    }
+
   }
 
     

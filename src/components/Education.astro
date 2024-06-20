@@ -2,7 +2,7 @@
 import ExperienceCard from "./ExperienceCard.astro";
 
 ---
-<section class="exp-section">
+<section class="section-education">
     <h1>Education</h1>
 
     <ExperienceCard number="01" role="Digital Experience Design (DXD)" company="Postgraduate course, Faculty of Fine Arts - University of Lisbon" date="Sep 23 - Jun 24">
@@ -17,12 +17,13 @@ import ExperienceCard from "./ExperienceCard.astro";
         <p>My background in engineering has allowed me to leverage my analytical and complex problem-solving skills. I have gained an understanding of the interaction between people and systems, as well as the ability to think in terms of system design. Additionally, I acquired a prototyping and testing mindset.</p>
 
     </ExperienceCard>
+
 </section>
 
 
 <style>
-    .exp-section {
-        padding: 24px;
+    .section-education {
+        /* padding: 24px; */
         width: 100%;
     }
     
@@ -33,8 +34,13 @@ import ExperienceCard from "./ExperienceCard.astro";
 
     @media (min-width: 992px) {
         h1 {
-        text-align: left;
+            text-align: left;
         }
+
+        .section-experience {
+            padding: 24px;
+        }
+
     }
     
 </style>

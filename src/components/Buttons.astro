@@ -1,13 +1,13 @@
 ---
 ---
 
-<div class="buttons">
+<article class="buttons">
     <a href="/letstalk" class="letstalk">
         <p>Let's Talk</p>
-        <img src="/svg/arrow-up-right.svg" alt="Simple arrow up right">
+        <img src="/svg/arrow-up-right.svg" alt="Arrow pointing to the upper right corner">
     </a>
     <a href="/portfolio" class="viewwork">View Work</a>
-</div>
+</article>
 
 <style>
     .buttons {
@@ -25,23 +25,25 @@
     }
 
     .buttons a {
-        text-decoration: none;
-        border-radius: 24px;
-        height: 44px;
-        width: 140px;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 4px;
+        text-decoration: none;
+        border-radius: 24px;
+        height: 44px;
+        width: 140px;
     }
 
+    .letstalk, .letstalk p {
+        color: var(--light-color);
+    }
+    
     .letstalk {
         background-color: var(--main-color);
-        color: var(--light-color);
     }
 
     .letstalk p {
-        color: var(--light-color);
         margin: 0;
     }
 
@@ -58,5 +60,5 @@
     .letstalk p, a.viewwork {
         font-size: 1rem;
     }
-    
+
 </style>

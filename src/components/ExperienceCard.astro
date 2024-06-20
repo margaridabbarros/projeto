@@ -3,45 +3,44 @@ const {number, role, company, date} = Astro.props
 ---
 
 <button type="button" class="experience">
-    <div class="experience-information">
-        <p class="experience-number">{number}</p>
-        <div class="experience-details">
-          <p class="experience-role">{role}</p>
-          <div class="experience-company-date">
-            <p>{company}</p>
-            <p>{date}</p>
-          </div>
-        </div>
-    </div>
+  <article class="experience-information">
+    <p class="experience-number">{number}</p>
+    <article class="experience-details">
+      <p class="experience-role">{role}</p>
+      <article class="experience-company-date">
+        <p>{company}</p>
+        <p>{date}</p>
+      </article>
+    </article>
+  </article>
     
-    <img src="/svg/plus.svg" class="plus" alt="">
-    <img src="/svg/minus.svg" class="minus" alt="">
+  <img src="/svg/plus.svg" class="plus" alt="Plus icon to expand information">
+  <img src="/svg/minus.svg" class="minus" alt="Minus icon to collapse information">
 
 </button>
 
-<div class="experience-content">
+<article class="experience-content">
     <slot />
-</div>
+</article>
   
 
 <style>
-
   .experience {
-      background-color: var(--light-color);
-      padding: 16px;
-      width: 100%;
-      border: none;
-      border-bottom: 0.5px solid var(--main-color);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      cursor: pointer
+    background-color: var(--light-color);
+    border: none;
+    border-bottom: 0.5px solid var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;  
+    padding: 16px;
+    width: 100%;
+    cursor: pointer
   }
 
   .experience-number {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
   }
 
@@ -59,7 +58,7 @@ const {number, role, company, date} = Astro.props
   .experience-role {
     font-size: 1.2rem;
     text-align: left;
-    font-weight: 200;
+    /* font-weight: 200; */
     margin: 0;
   }
 
@@ -104,11 +103,16 @@ const {number, role, company, date} = Astro.props
   }
 
   .experience-content {
-    background-color: #fff;
+    background-color: var(--light-color);
     padding: 0 16px 16px 16px;
     display: none;
     overflow: hidden;
     border-bottom: 1px solid var(--main-color);
+  }
+  
+  @media screen and (min-width: 600px) {
+    .experience-number {
+      font-size: 3rem;
   }
 
   @media screen and (min-width: 768px) {

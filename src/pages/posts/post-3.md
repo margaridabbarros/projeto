@@ -14,7 +14,7 @@ tags: ["UX/UI Design", "Product Design"]
 behance: "https://www.behance.net/gallery/190788149/Website-Redesign-Belas-Artes-Lisboa"
 ---
 <figure class="project">
-    <img src="/img/Fbaul-1.jpg" alt="" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d264cc190788149.65c0e402094b1.png" alt="" class="project">
     <img src="/img/Fbaul-2.jpg" alt="" class="project">
     <img src="/img/Fbaul-3.jpg" alt="" class="project">
     <img src="/img/Fbaul-4.jpg" alt="" class="project">

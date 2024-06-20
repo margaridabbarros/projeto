@@ -22,40 +22,41 @@ const { frontmatter } = Astro.props;
     
 
     <section class="project-details">
-      <div class="project">
-        <h3 >Project</h3>
-        <p>{frontmatter.type}</p>
-      </div>
-  
-      <div class="project">
-        <h3>Deadline</h3>
-        <p>{frontmatter.time}</p>
-      </div>
-  
-      <div class="project">
-        <h3>Team</h3>
-        <p>{frontmatter.team}</p>
-      </div>
-  
-      <div class="project">
-        <h3>Tools</h3>
-        <p>{frontmatter.tool}</p>
-      </div>
-  
-      <div class="project">
-        <h3>Skills</h3>
-        <div class="tags">
-          {frontmatter.tags.map((tag) => (
-            <p class="tag">{tag}</p>
-          ))}
+      <article>
+        <div class="project">
+          <h3 >Project</h3>
+          <p>{frontmatter.type}</p>
         </div>
-      </div>
+    
+        <div class="project">
+          <h3>Deadline</h3>
+          <p>{frontmatter.time}</p>
+        </div>
+    
+        <div class="project">
+          <h3>Team</h3>
+          <p>{frontmatter.team}</p>
+        </div>
+    
+        <div class="project">
+          <h3>Tools</h3>
+          <p>{frontmatter.tool}</p>
+        </div>
+    
+        <div class="project">
+          <h3>Skills</h3>
+          <div class="tags">
+            {frontmatter.tags.map((tag) => (
+              <p class="tag">{tag}</p>
+            ))}
+          </div>
+        </div>
+      </article>
+
+      <p class="project-description">{frontmatter.description}</p>
 
     </section>
     
-
-    <p class="project-description">{frontmatter.description}</p>
-
     <div class="behance">
       <a href={frontmatter.behance} class="behance">
         <img src="/svg/Behance.svg" alt="">

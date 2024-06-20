@@ -15,30 +15,22 @@ behance: "https://www.behance.net/gallery/197318489/Instagrams-New-Feature-Searc
 ---
 
 <figure class="project">
-    <img src="/img/Instagram-1.jpg" alt="" class="project">
-    <img src="/img/Instagram-2.jpg" alt="" class="project">
-    <img src="/img/Instagram-3.jpg" alt="" class="project">   
-    <img src="/img/Instagram-4.jpg" alt="" class="project">
-    <img src="/img/Instagram-5.jpg" alt="" class="project">
-    <img src="/img/Instagram-6.jpg" alt="" class="project">
-    <img src="/img/Instagram-7.jpg" alt="" class="project">
-    <img src="/img/Instagram-8.jpg" alt="" class="project">
-    <img src="/img/Instagram-9.jpg" alt="" class="project">
-    <img src="/img/Instagram-10.jpg" alt="" class="project">   
-    <img src="/img/Instagram-11.jpg" alt="" class="project">
-    <img src="/img/Instagram-1.jpg" alt="" class="project">
-    <img src="/img/Instagram-12.jpg" alt="" class="project">
-    <img src="/img/Instagram-13.jpg" alt="" class="project">
-    <img src="/img/Instagram-14.jpg" alt="" class="project">
-    <img src="/img/Instagram-15.jpg" alt="" class="project">
-    <img src="/img/Instagram-16.jpg" alt="" class="project">   
-    <img src="/img/Instagram-17.jpg" alt="" class="project">
-    <img src="/img/Instagram-18.jpg" alt="" class="project">
-    <img src="/img/Instagram-19.jpg" alt="" class="project">
-    <img src="/img/Instagram-20.jpg" alt="" class="project">
-    <img src="/img/Instagram-21.jpg" alt="" class="project">
-    <img src="/img/Instagram-22.jpg" alt="" class="project">
-    <img src="/img/Instagram-23.jpg" alt="" class="project">        
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/855bd7197318489.662eac7e56608.jpg" alt="Project introduction, current challenge, statistics, mockups with final solution" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4dce1f197318489.662eac7e56ef4.jpg" alt="project solution description" class="project">   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lzAekp-sB7I?si=lNjXVrOWPFJp6L4r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="project" allowfullscreen></iframe>
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/0a773b197318489.662eac7e59c26.jpg" alt="Impact for the users, creators, and the business. Solution preview." class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/88de4b197318489.662eac7e58696.jpg" alt="project context, numbers, and the design process: research, analysis, ideation, and design." class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd9733197318489.662eac7e592c7.jpg" alt="Competitors analysis - how do users control their content on other social media platform?" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/3e036c197318489.662eac7e58042.jpg" alt="Desk Research to find how Instagram impacts businesses, who the Instagram users are, and qhat makes TikTok so successful" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2e8352197318489.662eac7e5bd82.jpg" alt="Social listening to understand what users usually say about Instagram." class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/eba8e2197318489.662f5b6ed4b1f.png" alt="Interviews and surveys with users and creatores to understand what they feel and behave when using Instagram" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/d1aa49197318489.662eac7e5a7b7.jpg" alt="Personas definition, which are private users, and creators or business owners" class="project">   
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c10544197318489.662eac7e5c3eb.jpg" alt="Features prioritization using the Moscow Matrix" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/01b893197318489.6634cf5723cfb.jpg" alt="User flows related to the main core features, namely keywork searching, content personalization, and filter and sort content" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a76d73197318489.662eac7e5b738.jpg" alt="Mockups for every core feature, which are search keyword, content personalization, and filter and sort results. Explanation for every decision made in the interface" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/80f0c2197318489.662eac7e57a27.jpg" alt="Usability tests that resulted in actionable feedback insights" class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/643d27197318489.662eac7e5a2dc.jpg" alt="Main project learnings and next steps." class="project">   
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b1e116197318489.662eac7e5b121.jpg" alt="Thank you note and team." class="project">      
 </figure>
 
 

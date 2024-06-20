@@ -1,6 +1,5 @@
 :root {
-  --main-color: rgba(17, 17, 17, 1);   
-  /* #343434 */
+  --main-color: rgba(17, 17, 17, 1);
   --light-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(162, 162, 162, 1);
   --secondary-light-color:rgba(246, 246, 246, 1);
@@ -19,7 +18,7 @@ body {
   width: 100%;
   /*max-width: 80ch;*/
   padding: 16px;
-  margin-top: 5rem;
+  margin-top: 80px;
   line-height: 1.5;
   height: auto;
 }
@@ -47,18 +46,18 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 64px;
+  height: 80px;
   width: 100%;
   z-index: 1;
 }
 
- /* nav styles */
+ /*Nav styles */
 .hamburger {
   cursor: pointer;
-  padding: 16px 16px;
+  padding: 16px;
 }
 
-/*estilo do icon hamburguer*/
+/*Estilo do icon hamburguer*/
 .hamburger .line {
   display: block;
   width: 16px;
@@ -71,7 +70,7 @@ nav {
   margin-bottom: 0;
 }
 
-/*lista das páginas - fechada*/
+/*Lista das páginas - fechada*/
 
 .nav-links {
   width: 100%;
@@ -82,11 +81,11 @@ nav {
   margin: 0;
 }
 
-/*lista das páginas - aberta*/
+/*Lista das páginas - aberta*/
 .nav-links a {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 16px 0;
   text-decoration: none;
   font-size: 1rem;
   color: var(--main-color);
@@ -103,7 +102,7 @@ nav {
 
 
 h1 {
-  margin: 2rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
   text-align: center;
   font-weight: 400;
@@ -121,13 +120,30 @@ h2, p {
 
 /*Conteúdo de cada página*/
 
-
-section.page {
+.page {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 40px;
 }
+
+/* @keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-animation {
+    animation: enter-animation 0.8s 1;
+  }
+} */
 
 section.intro {
   display: flex;
@@ -173,7 +189,7 @@ p.intro {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin: 3rem 0 0 0;
+  margin: 48px 0 0 0;
 }
 
 .profile h2 {
@@ -251,7 +267,7 @@ h2.project {
 
 .project h3, .project p {
   font-size: 1rem;
-  font-weight: 200;
+  /* font-weight: 200; */
 }
 
 .project h3 {
@@ -262,11 +278,17 @@ h2.project {
   color: var(--main-color);
 }
 
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 div.project {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 24px;
+  gap: 40px;
   border-bottom: solid 1px var(--secondary-color);
 }
 
@@ -280,7 +302,6 @@ div.tags {
 p.tag {
   background-color: var(  --secondary-light-color);
   padding: 0 8px;
-  /* margin: 0 */
 }
 
 p.project-description {
@@ -311,8 +332,12 @@ div.behance {
   margin: 0; 
 }
 
-img.project {
+img.project, iframe.project {
   width: 100%;
+}
+
+iframe.project {
+  height: 500px;
 }
 
 figure.project {
@@ -320,6 +345,7 @@ figure.project {
   flex-direction: column;
   gap: 0;
 }
+
 
 
 /*Let's Talk*/
@@ -380,7 +406,7 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
   border-radius: 8px;
 }
 
@@ -390,7 +416,7 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
   border-radius: 8px;
   resize: none;
   font-family: Helvetica, sans-serif;
@@ -398,8 +424,8 @@ textarea {
 
 input[type=submit] {
   width: fit-content;
-  background-color: #343434;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--light-color);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -408,11 +434,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #A2A2A2;
+  background-color: var(--secondary-color);
 }
-
-
-
 
 
 
@@ -428,7 +451,7 @@ input[type=submit]:hover {
 
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 16px 16px;
   }
 
   .nav {
@@ -449,13 +472,8 @@ input[type=submit]:hover {
 
 
 @media (min-width: 768px) {
-
-  /* section.profile {
-    width: 100%;
-  } */
   
   section.profile > div {
-    /* max-width: 900px; */
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -482,6 +500,20 @@ input[type=submit]:hover {
     text-align: left;
   }
 
+  .project-details {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .project-details article {
+    width: 50%
+  }
+
+  p.project-description {
+    width: 50%;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -494,6 +526,5 @@ input[type=submit]:hover {
   section.exp {
     width: 50%;
   }
-
 
 }
