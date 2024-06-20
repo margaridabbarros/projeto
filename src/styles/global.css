@@ -79,6 +79,7 @@ nav {
   background-color: var(--light-color);
   display: none;
   margin: 0;
+  box-shadow: 0 2px 4px 0 var(--shadow-color);
 }
 
 /*Lista das páginas - aberta*/
@@ -94,7 +95,6 @@ nav {
 .nav-links a:hover, a:focus {
   color: var(--secondary-color);
 }
-
 
 .expanded {
   display: unset;
@@ -267,11 +267,11 @@ h2.project {
 
 .project h3, .project p {
   font-size: 1rem;
-  /* font-weight: 200; */
 }
 
 .project h3 {
   color: var(--secondary-color);
+    font-weight: 200;
 }
 
 .project p {
