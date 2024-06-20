@@ -78,6 +78,7 @@ nav {
   background-color: var(--light-color);
   display: none;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   box-shadow: 0 2px 4px 0 var(--shadow-color);
 }
