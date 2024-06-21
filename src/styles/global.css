@@ -1,7 +1,7 @@
 :root {
   --main-color: rgba(17, 17, 17, 1);
   --light-color: rgba(255, 255, 255, 1);
-  --secondary-color: rgba(162, 162, 162, 1);
+  --secondary-color: rgba(128, 128, 128, 1);
   --secondary-light-color:rgba(217, 217, 217, 1);
   --shadow-color: rgba(100, 100, 111, 0.2);
 }
@@ -16,8 +16,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  /*max-width: 80ch;*/
-  padding: 16px;
+  /* padding: 16px; */
   margin-top: 80px;
   line-height: 1.5;
   height: auto;
@@ -125,30 +124,12 @@ h2, p {
 
 /*Conteúdo de cada página*/
 
-.page {
+section.page {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 80px;
+  padding: 40px 0 80px 0;
 }
-
-/* @keyframes enter-animation {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .intro-animation {
-    animation: enter-animation 0.8s 1;
-  }
-} */
 
 section.intro {
   display: flex;
@@ -165,14 +146,14 @@ section.intro > div {
 }
 
 h1.intro {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 400;
   margin: 1rem 0 0 0;
 }
 
 h2.intro {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 200;
   margin: 0;
@@ -209,6 +190,7 @@ p.intro {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 16px;
 }
 
 p.profile-content {
@@ -219,7 +201,8 @@ p.profile-content {
 .work-education {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 80px;
+  padding: 16px;
 }
 
 
@@ -263,8 +246,8 @@ figure.slide{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  padding: 16px 0;
+  gap: 80px;
+  padding: 16px;
 }
 
 h1.project {
@@ -294,6 +277,7 @@ h2.project {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 0 16px;
 }
 
 div.project {
@@ -309,11 +293,13 @@ div.tags {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
+  padding: 16px 0;
 }
 
 p.tag {
   background-color: var(  --secondary-light-color);
   padding: 0 8px;
+  margin: 0;
 }
 
 p.project-description {
@@ -336,6 +322,7 @@ div.behance {
   border-radius: 24px;
   width: fit-content;
   padding: 0 24px;
+  margin: 0 16px;
 
 }
 
@@ -359,13 +346,13 @@ figure.project {
 }
 
 
-
 /*Let's Talk*/
 
 section.letstalk {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 0 16px;
 }
 
 
@@ -460,22 +447,39 @@ input[type=submit]:hover {
 
   .nav-links li {
     display: inline-block;
-    padding: 16px 16px;
+    padding: 16px;
   }
 
-  .nav {
+  nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .hamburger {
     display: none;
   }
 
+  h1.intro {
+    font-size: 3rem;
+  }
+  
+  h2.intro {
+    font-size: 1.5rem;
+  }
+
   section.letstalk {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    padding: 0 24px;
+  }
+
+  article.info {
+    width: 30%;
+  }
+
+  article.form {
+    width: 70%;
   }
 }
 
@@ -510,14 +514,10 @@ input[type=submit]:hover {
     text-align: left;
   }
 
-  .cards {
-    gap: 40px;
-  }
-
   .project-details {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    /* gap: 40px; */
   }
 
   .project-details article {
@@ -531,15 +531,6 @@ input[type=submit]:hover {
   section.letstalk {
     padding: 0 80px;
   }
-
-  article.info {
-    width: 30%;
-  }
-
-  article.form {
-    width: 70%;
-  }
-
 }
 
 @media (min-width: 992px) {
@@ -554,3 +545,4 @@ input[type=submit]:hover {
   }
 
 }
+

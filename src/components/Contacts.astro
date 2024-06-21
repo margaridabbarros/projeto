@@ -3,7 +3,7 @@ const { contact, name } = Astro.props;
 ---
 
 <article class="contacts-link">
-    <a href={contact}>{name}</a>
+    <a href={contact} title={name}>{name}</a>
 </article>
 
 

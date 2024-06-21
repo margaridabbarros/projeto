@@ -1,37 +1,18 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-/*import type { TRANSITION_BEFORE_PREPARATION } from 'astro:transitions/client';*/
-const allPosts = await Astro.glob('../pages/posts/*.md');
-const pageTitle = "Novo My Astro Learning Blog";
+const pageTitle = "Portfolio";
 ---
-<!-- <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header /> -->
 
-    <BaseLayout>
-      <section class="page">
+<BaseLayout pageTitle={pageTitle}>
 
-        <h1 class="intro">Projects</h1>
+  <section class="page">
+    <h1 class="intro">Projects</h1>
+    <div class="cards">
+      <ProjectCard />
+    </div>
+  </section>
   
-        <div class="cards">
-          <ProjectCard />
-        </div>
-      
-      </section>
-    
-    </BaseLayout>
-    
+</BaseLayout>
 
-
-    <!-- <Footer />
-  </body>
-</html> -->

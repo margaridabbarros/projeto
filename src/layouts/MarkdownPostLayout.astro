@@ -52,12 +52,11 @@ const { frontmatter } = Astro.props;
     </section>
     
     <div class="behance">
-      <a href={frontmatter.behance} class="behance">
+      <a href={frontmatter.behance} title="Open project on Behance" class="behance">
         <img src="/svg/Behance.svg" alt="">
         <p>Open project on Behance</p>
       </a>
     </div>
-    
 
     <slot />
   

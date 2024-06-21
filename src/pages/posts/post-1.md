@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Instagram New Feature'
-subtitle: 'Introducing Search Control'
+title: "Instagram New Feature"
+subtitle: "Introducing Search Control"
 description: "Conducted UX research, identified user needs, developed a new feature for search and content personalization. Seamlessly integrated with current UI design, based on insights from user interviews, surveys, and usability testing."
 type: "Case Study"
 time: "7 Weeks"
@@ -15,8 +15,8 @@ behance: "https://www.behance.net/gallery/197318489/Instagrams-New-Feature-Searc
 ---
 
 <figure class="project">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/855bd7197318489.662eac7e56608.jpg" alt="Project introduction, current challenge, statistics, mockups with final solution" class="project">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4dce1f197318489.662eac7e56ef4.jpg" alt="project solution description" class="project">   
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/855bd7197318489.662eac7e56608.jpg" alt="Project introduction, current challenge, statistics, mockups with final solution." class="project">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4dce1f197318489.662eac7e56ef4.jpg" alt="Project solution description." class="project">   
     <iframe width="560" height="315" src="https://www.youtube.com/embed/lzAekp-sB7I?si=lNjXVrOWPFJp6L4r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="project" allowfullscreen></iframe>
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/0a773b197318489.662eac7e59c26.jpg" alt="Impact for the users, creators, and the business. Solution preview." class="project">
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/88de4b197318489.662eac7e58696.jpg" alt="project context, numbers, and the design process: research, analysis, ideation, and design." class="project">

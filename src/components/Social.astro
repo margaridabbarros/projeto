@@ -3,7 +3,7 @@ const { platform, username, name } = Astro.props;
 ---
 
 <article class="contacts-link">
-    <a href={`https://www.${platform}/${username}`}>{name}</a>
+    <a href={`https://www.${platform}/${username}`} title={name}>{name}</a>
 </article>
 
 <style>
